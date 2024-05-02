@@ -16,7 +16,7 @@ int main() {
     std::cout << "Vous avez " << chance_max << " chances pour trouver le nombre mystere." << std::endl;
 
     do {
-        std::cout << "Il vous reste " << chancesRestantes << " chance(s). Entrez votre proposition : ";
+        std::cout << "Il vous reste " << chancesRestantes << " chances. Entrez votre proposition : ";
         std::cin >> tentative;
 
         if (tentative < nombreMystere) {
@@ -31,6 +31,6 @@ int main() {
         chancesRestantes--;
     } while (chancesRestantes > 0);
 
-    std::cout << "Désolé, vous avez épuisé toutes vos chances. Le nombre mystere était : " << nombreMystere << std::endl;
+    std::cout << "Desole, vous avez epuise toutes vos chances. Le nombre mystere etait : " << nombreMystere << std::endl;
     return 0;
 }
